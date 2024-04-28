@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav> <!--(Header) Fila-->
+        <div class="header">
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu" height="24" viewBox="0 0 24 24" width="24" focusable="false" display: inherit; width: 100%; height: 100%;"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+            <a href="https://www.youtube.com/"><img class="logo" width="112px" src="./Iconos-Imagenes/Logo.png" alt="Página de inicio de YouTube"></a>
+        </div>
+        <div class="full-searchbar">
+            <div class="input">
+                <input class="search-bar" type="text" spellcheck="false" placeholder="Buscar">
+                <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" display: inherit; width: 100%; height: 100%;"><path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></button>
+            </div>
+            <i class="bi bi-mic-fill voice-search" alt="Haz búsquedas por voz"></i>
+        </div>
+        <div class="buttons">
+            <i class="bi bi-search search-button-responsive" alt="Buscar"></i>
+            <i class="bi bi-mic-fill voice-search-responsive" alt="Haz búsquedas por voz"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" class="camera" alt="Crear" height="24" display: inherit; width: 100%; height: 100%;" viewBox="0 0 24 24" width="24" focusable="false"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="bell" alt="Notificaciones" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" display: inherit; width: 100%; height: 100%;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg>
+            <img class="pfp" src="./Iconos-Imagenes/Pfp.png">
+        </div>
+    </nav>
+    <div class="content"> <!--Fila-->
+        <div class="menubar-desktop"> <!--Columna-->
+            <div class="home"> 
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" display: inherit; width: 100%; height: 100%;"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
+                <p>Inicio</p>
+            </div>
+            <div class="shorts">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" display: inherit; width: 100%; height: 100%;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+                <p>Shorts</p>
+            </div>
+            <div class="subs">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" display: inherit; width: 100%; height: 100%;"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+                <p>Suscripciones</p>
+            </div>
+            <div class="you">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" display: inherit; width: 100%; height: 100%;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+                <p>Tú</p>
+            </div>
+        </div>
+        <div class="feed"> <!--Columna-->
+            <div class="categories"> <!--Categorias (Fila)-->
+                <p class="tag tag1">Todo</p>
+                <p class="tag tag2">Música</p>
+                <p class="tag tag3">Audiciones</p>
+                <p class="tag tag5">Taylor Swift</p>
+                <p class="tag tag6">Pop indie</p>
+                <p class="tag tag7">Sketches</p>
+                <p class="tag tag8">Avance</p>
+                <p class="tag tag9">Videojuegos</p>
+                <p class="tag tag10">En directo</p>
+                <p class="tag tag11">Mixes</p>
+                <p class="tag tag12">Subidas recientes</p>
+                <p class="tag tag13">Visto</p>
+                <p class="tag tag14">Novedad para ti</p>
+            </div>
+            <div class="videos"> <!--Videos (Grid - 4 Columnas - 2 Filas)-->
+                <div class="video-1"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-2"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-3"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-4"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-5"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-6"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-7"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-8"> <!--Video (Columna)-->
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><img src="https://i.ytimg.com/vi/M_0l-5vEE8A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnTUUFdWSycrk18er1EE9D1FJPHQ"></a>
+                    </div>
+                    <div class="video-content"> <!--(Grid - Fila)-->
+                        <div class="channel-pic"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/@chatsandreacts"><img src="https://yt3.googleusercontent.com/S8_T3sAMVXxMsHGiEdb6Iv33cbv5qD7Kc5t1S4tvsE2fRRV7Hg4tHMLzYk31ka6hjYzSRYDqTQ=s176-c-k-c0x00ffffff-no-rj" alt="Chats & Reacts"></a>
+                        </div> 
+                        <div class="description"> <!--(Columna)-->
+                            <a href="https://www.youtube.com/watch?v=M_0l-5vEE8A"><h3 class="title">Album Reaction: (Part 2) THE<br>TORTURED POETS DEPARTMENT:...</h3></a>
+                            <a href="https://www.youtube.com/@chatsandreacts"><p class="channel">Chats & Reacts</p></a>
+                            <p class="views-time">470 K visualizaciones • Hace 3 días</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
