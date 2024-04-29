@@ -286,7 +286,7 @@ a {
 
  /* Responsive */
 
- @media only screen and (min-width: 500px) {
+ @media only screen and (max-width: 500px) {
     .menubar-desktop {
         display: none;
     }
